@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Product — SaveSignal</title>
+<meta name="description" content="The full SaveSignal architecture: AI prediction before disaster strikes, and a self-healing BLE/LoRa mesh rescue network after the towers collapse." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23141110'/%3E%3Ccircle cx='50' cy='50' r='34' fill='none' stroke='%23FF6B52' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23F13C2E'/%3E%3C/svg%3E" />
+
+<link rel="stylesheet" href="css/fonts.css" />
+<link rel="stylesheet" href="css/tailwind.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body">
+
+<!-- ============ NAV ============ -->
+<header class="nav-shell fixed top-0 inset-x-0 z-50">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2.5">
+      <span class="signal-dot"></span>
+      <span class="font-display font-semibold text-txt-primary text-base tracking-tight leading-none">SaveSignal</span>
+      <span class="hidden sm:inline font-mono text-[10px] tracking-widest text-txt-secondary uppercase border-l border-slate-line pl-2.5 ml-0.5">Built by :4-ever</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-1">
+      <a href="index.html" class="nav-link">01 Home</a>
+      <a href="about.html" class="nav-link">02 About Us</a>
+      <a href="product.html" class="nav-link is-active">03 Product</a>
+      <a href="contact.html" class="nav-link">04 Contact</a>
+    </nav>
+    <button id="navToggle" class="md:hidden nav-link" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+  </div>
+  <div id="mobileNav" class="hidden md:hidden border-t border-slate-line px-5 py-3 flex flex-col gap-1">
+    <a href="index.html" class="nav-link">01 Home</a>
+    <a href="about.html" class="nav-link">02 About Us</a>
+    <a href="product.html" class="nav-link is-active">03 Product</a>
+    <a href="contact.html" class="nav-link">04 Contact</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative pt-32 pb-10 sm:pt-40 sm:pb-14 overflow-hidden">
+  <div class="relative max-w-3xl mx-auto px-5 sm:px-8 text-center">
+    <p class="font-mono text-xs tracking-widest uppercase text-coral-700">Product</p>
+    <h1 class="mt-4 font-display font-bold text-4xl sm:text-5xl text-txt-primary tracking-tight" style="text-wrap: balance;">
+      SaveSignal: the full architecture.
+    </h1>
+    <p class="mt-6 text-txt-secondary text-lg leading-relaxed">
+      Two systems, one continuous timeline — prediction before a disaster, and a self-healing
+      relay network after one. Switch between phases below.
+    </p>
+  </div>
+</section>
+
+<!-- ============ TAB BAR ============ -->
+<div class="sticky top-16 z-40 bg-paper/95 backdrop-blur border-b border-slate-line py-4">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-center gap-3">
+    <button class="tab-btn is-active" data-tab="pre">Pre-Disaster</button>
+    <button class="tab-btn" data-tab="post">Post-Disaster</button>
+  </div>
+</div>
+
+<!-- ============ PRE-DISASTER PANEL ============ -->
+<section class="tab-panel is-active" id="panel-pre">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16">
+    <h2 class="font-display font-bold text-2xl sm:text-3xl text-txt-primary tracking-tight text-center" style="text-wrap: balance;">
+      Sensing and prediction, before disaster strikes.
+    </h2>
+
+    <!-- Flow diagram -->
+    <div class="mt-12 console-panel rounded-card p-6 sm:p-8">
+      <p class="console-tag mb-6">Signal Path</p>
+      <div class="flow-diagram justify-center">
+        <div class="flow-stage">
+          <div class="flow-box is-coral">Animal Collar → AI Behavior Classification</div>
+          <div class="flow-box is-coral">Gov Data Center (PAGASA)</div>
+        </div>
+        <div class="flow-arrow">
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none"><path d="M0 8H22M22 8L15 1M22 8L15 15" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <div class="flow-stage">
+          <div class="flow-box">AI Prediction Model</div>
+        </div>
+        <div class="flow-arrow">
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none"><path d="M0 8H22M22 8L15 1M22 8L15 15" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <div class="flow-stage">
+          <div class="flow-box is-amber">Earthquake Prediction</div>
+          <div class="flow-box is-amber">Other Disaster Predictions</div>
+        </div>
+        <div class="flow-arrow">
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none"><path d="M0 8H22M22 8L15 1M22 8L15 15" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <div class="flow-stage">
+          <div class="flow-box is-amber">Public Alert: Stay Prepared</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Layer rows -->
+    <div class="mt-12 max-w-3xl mx-auto">
+      <div class="layer-row flex gap-5 py-6">
+        <p class="layer-index">01</p>
+        <div>
+          <h3 class="font-display font-semibold text-lg text-txt-primary">Sensing Layer</h3>
+          <p class="mt-1.5 text-txt-secondary leading-relaxed">Existing Korean pet-wearables continuously capture heart rate, movement, and behavioral signals from both trained and domestic dogs.</p>
+        </div>
+      </div>
+      <div class="layer-row flex gap-5 py-6">
+        <p class="layer-index">02</p>
+        <div>
+          <h3 class="font-display font-semibold text-lg text-txt-primary">Behavior Classification</h3>
+          <p class="mt-1.5 text-txt-secondary leading-relaxed">An AI layer flags anomalous behavior in real time, treating animal reactions as a supplementary hazard signal alongside instrument data — not a replacement for it.</p>
+        </div>
+      </div>
+      <div class="layer-row flex gap-5 py-6">
+        <p class="layer-index">03</p>
+        <div>
+          <h3 class="font-display font-semibold text-lg text-txt-primary">Fusion with Gov Data</h3>
+          <p class="mt-1.5 text-txt-secondary leading-relaxed">Behavior signals combine with PAGASA's meteorological and seismic feeds into one prediction model — most valuable for earthquakes, where animals react before instruments trigger.</p>
+        </div>
+      </div>
+      <div class="layer-row flex gap-5 py-6">
+        <p class="layer-index">04</p>
+        <div>
+          <h3 class="font-display font-semibold text-lg text-txt-primary">Public Early Warning</h3>
+          <p class="mt-1.5 text-txt-secondary leading-relaxed">The fused model issues an early warning alert to the public — extending lead time beyond what either data source would give alone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POST-DISASTER PANEL ============ -->
+<section class="tab-panel" id="panel-post">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16">
+    <h2 class="font-display font-bold text-2xl sm:text-3xl text-txt-primary tracking-tight text-center" style="text-wrap: balance;">
+      Mesh rescue, when the network is completely down.
+    </h2>
+
+    <!-- Flow diagram -->
+    <div class="mt-12 console-panel rounded-card p-6 sm:p-8">
+      <p class="console-tag mb-6">Signal Path</p>
+      <div class="flow-diagram justify-center">
+        <div class="flow-stage">
+          <div class="flow-box is-alert">Victim Sends SOS</div>
+        </div>
+        <div class="flow-arrow">
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none"><path d="M0 8H22M22 8L15 1M22 8L15 15" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <div class="flow-stage">
+          <div class="flow-box is-amber">Dog Collar</div>
+          <div class="flow-box is-amber">Phone / Wearable</div>
+        </div>
+        <div class="flow-arrow">
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none"><path d="M0 8H22M22 8L15 1M22 8L15 15" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <div class="flow-stage">
+          <div class="flow-box is-amber">Signal Hops Device to Device</div>
+        </div>
+        <div class="flow-arrow">
+          <svg width="24" height="16" viewBox="0 0 24 16" fill="none"><path d="M0 8H22M22 8L15 1M22 8L15 15" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <div class="flow-stage">
+          <div class="flow-box is-teal">Rescue Team / Base Station</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Layer rows -->
+    <div class="mt-12 max-w-3xl mx-auto">
+      <div class="layer-row flex gap-5 py-6">
+        <p class="layer-index">01</p>
+        <div>
+          <h3 class="font-display font-semibold text-lg text-txt-primary">Any Device, One Mesh</h3>
+          <p class="mt-1.5 text-txt-secondary leading-relaxed">Rescuer phones, wearables, and dog collars all run the same mesh-AI client, so whatever survives becomes part of the network.</p>
+        </div>
+      </div>
+      <div class="layer-row flex gap-5 py-6">
+        <p class="layer-index">02</p>
+        <div>
+          <h3 class="font-display font-semibold text-lg text-txt-primary">Trained &amp; Domestic Dogs Both Contribute</h3>
+          <p class="mt-1.5 text-txt-secondary leading-relaxed">Trained rescue dogs actively search using AI-assisted bark and behavior detection; ordinary pet collars passively extend mesh coverage and help locate trapped pets.</p>
+        </div>
+      </div>
+      <div class="layer-row flex gap-5 py-6">
+        <p class="layer-index">03</p>
+        <div>
+          <h3 class="font-display font-semibold text-lg text-txt-primary">Self-Healing Relay</h3>
+          <p class="mt-1.5 text-txt-secondary leading-relaxed">Signals hop device-to-device over BLE (short-range) and LoRa (long-range fallback). If a hop point goes offline, the network reroutes automatically.</p>
+        </div>
+      </div>
+      <div class="layer-row flex gap-5 py-6">
+        <p class="layer-index">04</p>
+        <div>
+          <h3 class="font-display font-semibold text-lg text-txt-primary">Built for the Worst Case</h3>
+          <p class="mt-1.5 text-txt-secondary leading-relaxed">Designed to work even when there is no cellular network left to activate from — not degraded connectivity, zero connectivity.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live demo -->
+    <div class="mt-16">
+      <div class="text-center max-w-2xl mx-auto">
+        <p class="font-mono text-xs tracking-widest uppercase text-amber-700">Live Demo</p>
+        <h3 class="mt-3 font-display font-bold text-2xl sm:text-3xl text-txt-primary tracking-tight">Send an SOS through the mesh</h3>
+        <p class="mt-4 text-txt-secondary leading-relaxed">
+          A simplified simulation of the relay logic above. Click any device on the field to take
+          it offline, then resend — watch the signal reroute around the outage.
+        </p>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <button id="sendSosBtn" class="inline-flex items-center justify-center gap-2 rounded-full bg-amber-500 hover:bg-amber-600 text-ink font-semibold font-body px-6 py-3 transition-colors">
+          Send SOS Signal
+        </button>
+        <button id="resetBtn" class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-line hover:border-txt-secondary text-txt-primary font-semibold font-body px-6 py-3 transition-colors">
+          Reset
+        </button>
+        <p id="statusLine" class="font-mono text-xs text-txt-secondary sm:ml-2">Ready to transmit.</p>
+      </div>
+
+      <div class="mt-8 grid lg:grid-cols-[1fr_320px] gap-5">
+        <div class="console-panel rounded-card p-4 sm:p-5">
+          <div class="flex flex-wrap items-center gap-4 mb-4 font-mono text-[11px] text-txt-secondary">
+            <span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-alert inline-block"></span> Victim SOS</span>
+            <span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-teal-500 inline-block"></span> Base Station</span>
+            <span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full border border-txt-secondary inline-block"></span> Relay device</span>
+            <span class="flex items-center gap-1.5"><span class="h-2 w-2 rounded-full border border-txt-secondary/40 border-dashed inline-block"></span> Offline</span>
+          </div>
+          <div id="meshField" class="demo-field relative w-full aspect-[4/3] sm:aspect-[16/10] rounded-lg bg-paper3 overflow-hidden">
+            <svg id="meshLines" class="absolute inset-0 w-full h-full pointer-events-none"></svg>
+            <div id="meshNodes" class="absolute inset-0"></div>
+          </div>
+        </div>
+
+        <div class="console-panel rounded-card p-5 flex flex-col max-h-[420px] lg:max-h-none">
+          <p class="console-tag">Relay Log</p>
+          <div id="relayLog" class="demo-log mt-3 flex-1 overflow-y-auto space-y-2 pr-1 text-xs min-h-[220px]">
+            <p class="text-txt-secondary">No signal sent yet. Press "Send SOS Signal" to begin.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="border-t border-slate-line py-10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-2.5">
+      <span class="signal-dot"></span>
+      <span class="font-display font-semibold text-txt-primary text-sm">SaveSignal</span>
+      <span class="font-mono text-[10px] tracking-widest text-txt-secondary uppercase">— AI that warns before, and connects after.</span>
+    </div>
+    <p class="font-mono text-[11px] text-txt-secondary text-center">
+      Concept developed for YCAFE 2026 · Korea-ASEAN Youth Diplomacy Program
+    </p>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/product.js"></script>
+<script src="js/demo.js"></script>
+</body>
+</html>

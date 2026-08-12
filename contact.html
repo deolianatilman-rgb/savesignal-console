@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us — SaveSignal</title>
+<meta name="description" content="Get in touch with :4-ever about SaveSignal, a Korea-ASEAN disaster resilience concept for YCAFE 2026." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23141110'/%3E%3Ccircle cx='50' cy='50' r='34' fill='none' stroke='%23FF6B52' stroke-width='6'/%3E%3Ccircle cx='50' cy='50' r='10' fill='%23F13C2E'/%3E%3C/svg%3E" />
+
+<link rel="stylesheet" href="css/fonts.css" />
+<link rel="stylesheet" href="css/tailwind.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body">
+
+<!-- ============ NAV ============ -->
+<header class="nav-shell fixed top-0 inset-x-0 z-50">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2.5">
+      <span class="signal-dot"></span>
+      <span class="font-display font-semibold text-txt-primary text-base tracking-tight leading-none">SaveSignal</span>
+      <span class="hidden sm:inline font-mono text-[10px] tracking-widest text-txt-secondary uppercase border-l border-slate-line pl-2.5 ml-0.5">Built by :4-ever</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-1">
+      <a href="index.html" class="nav-link">01 Home</a>
+      <a href="about.html" class="nav-link">02 About Us</a>
+      <a href="product.html" class="nav-link">03 Product</a>
+      <a href="contact.html" class="nav-link is-active">04 Contact</a>
+    </nav>
+    <button id="navToggle" class="md:hidden nav-link" aria-expanded="false" aria-controls="mobileNav">Menu</button>
+  </div>
+  <div id="mobileNav" class="hidden md:hidden border-t border-slate-line px-5 py-3 flex flex-col gap-1">
+    <a href="index.html" class="nav-link">01 Home</a>
+    <a href="about.html" class="nav-link">02 About Us</a>
+    <a href="product.html" class="nav-link">03 Product</a>
+    <a href="contact.html" class="nav-link is-active">04 Contact</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative pt-32 pb-14 sm:pt-40 sm:pb-16 overflow-hidden">
+  <div class="relative max-w-3xl mx-auto px-5 sm:px-8 text-center">
+    <p class="font-mono text-xs tracking-widest uppercase text-coral-700">Contact Us</p>
+    <h1 class="mt-4 font-display font-bold text-4xl sm:text-5xl text-txt-primary tracking-tight" style="text-wrap: balance;">
+      Let's talk SaveSignal.
+    </h1>
+  </div>
+</section>
+
+<!-- ============ FORM + INFO ============ -->
+<section class="pb-24">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8 grid lg:grid-cols-[1fr_360px] gap-8">
+    <form id="contactForm" class="console-panel rounded-card p-7 sm:p-8 space-y-5" novalidate>
+      <div>
+        <label for="fieldName" class="field-label">Name</label>
+        <input id="fieldName" name="name" type="text" required placeholder="Jane dela Cruz"
+          class="field-input w-full mt-2 px-4 py-3 text-sm text-txt-primary" />
+      </div>
+      <div>
+        <label for="fieldEmail" class="field-label">Email</label>
+        <input id="fieldEmail" name="email" type="email" required placeholder="jane@example.com"
+          class="field-input w-full mt-2 px-4 py-3 text-sm text-txt-primary" />
+      </div>
+      <div>
+        <label for="fieldSubject" class="field-label">Subject</label>
+        <input id="fieldSubject" name="subject" type="text" required placeholder="Partnership inquiry"
+          class="field-input w-full mt-2 px-4 py-3 text-sm text-txt-primary" />
+      </div>
+      <div>
+        <label for="fieldMessage" class="field-label">Message</label>
+        <textarea id="fieldMessage" name="message" rows="5" required placeholder="Tell us what you'd like to discuss…"
+          class="field-input w-full mt-2 px-4 py-3 text-sm text-txt-primary resize-none"></textarea>
+      </div>
+      <div class="flex items-center gap-4 pt-1">
+        <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-full bg-amber-500 hover:bg-amber-600 text-ink font-semibold font-body px-6 py-3 transition-colors">
+          Send Message
+        </button>
+        <p id="formStatus" class="font-mono text-xs text-txt-secondary" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+
+    <div class="console-panel rounded-card p-7 sm:p-8 h-fit">
+      <p class="console-tag">Contact Info</p>
+      <dl class="mt-5 space-y-4">
+        <div>
+          <dt class="font-mono text-[11px] uppercase tracking-wide text-txt-secondary">Program</dt>
+          <dd class="mt-0.5 text-txt-primary">YCAFE 2026</dd>
+        </div>
+        <div>
+          <dt class="font-mono text-[11px] uppercase tracking-wide text-txt-secondary">Focus</dt>
+          <dd class="mt-0.5 text-txt-primary">Korea-ASEAN Disaster Resilience</dd>
+        </div>
+        <div>
+          <dt class="font-mono text-[11px] uppercase tracking-wide text-txt-secondary">Region</dt>
+          <dd class="mt-0.5 text-txt-primary">Philippines (pilot)</dd>
+        </div>
+        <div>
+          <dt class="font-mono text-[11px] uppercase tracking-wide text-txt-secondary">Email</dt>
+          <dd class="mt-0.5 text-txt-primary">hello@savesignal.team</dd>
+        </div>
+        <div>
+          <dt class="font-mono text-[11px] uppercase tracking-wide text-txt-secondary">Based in</dt>
+          <dd class="mt-0.5 text-txt-primary">Seoul, South Korea</dd>
+        </div>
+      </dl>
+      <p class="mt-6 pt-5 border-t border-slate-line text-xs text-txt-secondary leading-relaxed">
+        SaveSignal is a concept prototype developed for the YCAFE 2026 pitch — not a deployed
+        product or live service.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="border-t border-slate-line py-10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-2.5">
+      <span class="signal-dot"></span>
+      <span class="font-display font-semibold text-txt-primary text-sm">SaveSignal</span>
+      <span class="font-mono text-[10px] tracking-widest text-txt-secondary uppercase">— AI that warns before, and connects after.</span>
+    </div>
+    <p class="font-mono text-[11px] text-txt-secondary text-center">
+      Concept developed for YCAFE 2026 · Korea-ASEAN Youth Diplomacy Program
+    </p>
+  </div>
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
